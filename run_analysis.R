@@ -40,5 +40,14 @@ meanstd <- select(data, grep("Subject|Activity|mean|std", names(data)))
 
 ## Uses descriptive activity names to name the activities in the data set
 ## --- transpose activitylabels' Integers to Activity, renaming everything in the column
-
+## --- Tidy up Column names with gsub
 meanstd[["Activity"]] <- factor(meanstd$Activity, levels = activitylabels$Integer, labels = activitylabels$Activity)
+names(meanstd) <- gsub("^t", "Time", names(meanstd))
+names(meanstd) <- gsub("Acc", "Accelerometer", names(meanstd))
+names(meanstd) <- gsub("Gyro", "Gyroscope", names(meanstd))
+names(meanstd) <- gsub("Mag", "Magnitude", names(meanstd))
+names(meanstd) <- gsub("^f", "Frequency", names(meanstd))
+names(meanstd) <- gsub("\\(\\)", "", names(meanstd))
+names(meanstd) <- gsub("-", "_", names(meanstd))
+## From the data set in step 4, creates a second, independent tidy data set
+## with the average of each variable for each activity and each subject.
