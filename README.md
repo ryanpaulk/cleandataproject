@@ -1,5 +1,5 @@
 
-#Getting and Cleaning Data Course Project
+# Getting and Cleaning Data Course Project
 
 This project merged the training and test data sets to create one data set. Only measurements of the mean and standard deviation were extracted for each feature. All activities and features were descriptively labeled.
 Merges the training and the test sets to create one data set.
