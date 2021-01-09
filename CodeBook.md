@@ -18,7 +18,7 @@
 
 ## Variables Defined
 
--features- The column names of measured feature
+"features"  The column names of measured feature
 -activitylabels- The activity performed
 -x_test- The metrics recorded
 -y_test- The activities that each subject performed
