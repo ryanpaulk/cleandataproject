@@ -7,7 +7,6 @@
 ## Good luck!
 library(data.table)
 library(tidyr)
-library(reshape2)
 library(dplyr)
 setwd("C:/Users/Ryan.Paulk/Documents/Data Science/datasciencecoursera/DataCleaning/Week4/UCI HAR Dataset")
 ## Read the Data
@@ -49,5 +48,10 @@ names(meanstd) <- gsub("Mag", "Magnitude", names(meanstd))
 names(meanstd) <- gsub("^f", "Frequency", names(meanstd))
 names(meanstd) <- gsub("\\(\\)", "", names(meanstd))
 names(meanstd) <- gsub("-", "_", names(meanstd))
+names(meanstd) <- gsub("BodyBody", "Body", names(meanstd))
 ## From the data set in step 4, creates a second, independent tidy data set
 ## with the average of each variable for each activity and each subject.
+## --- Group them! Subject's Activities's Feature Averaged
+grouped <- group_by(meanstd, Subject, Activity)
+Average <- summarise_all(grouped, mean, na.rm = TRUE)
+
