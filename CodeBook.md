@@ -40,10 +40,18 @@ train: the combination of the Training data
 
 data: the combination of the Test and Train data sets
 
+<<<<<<< HEAD
 meanstd: The subset of the Means and Standard Deviations of the Test and            Train data sets
 
 grouped: Grouping of each Subject's Activity's Feature measurement
 
 Average: Averaging the groups of measurements for each Subject's Activity's          Feature
+=======
+meanstd: The subset of the Means and Standard Deviations of the Test and Train data sets
+
+grouped: Grouping of each Subject's Activity's Feature measurement
+
+Average: Averaging the groups of measurements for each Subject's Activity's Feature
+>>>>>>> 7fffab9430e249ea3afbbd2007b742268d281c1f
 
 
