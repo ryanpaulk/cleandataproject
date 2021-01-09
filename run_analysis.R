@@ -1,5 +1,11 @@
 ## You should create one R script called run_analysis.R that does the following. 
-
+path <- getwd()
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+if (!file.exists("Zip.zip")) {
+  download.file(url, file.path(path, "Zip.zip"))
+}
+unzip(zipfile = "Zip.zip")
+setwd("./UCI HAR Dataset")
 
 
 
@@ -8,7 +14,7 @@
 library(data.table)
 library(tidyr)
 library(dplyr)
-setwd("C:/Users/Ryan.Paulk/Documents/Data Science/datasciencecoursera/DataCleaning/Week4/UCI HAR Dataset")
+
 ## Read the Data
 ## Appropriately labels the data set with descriptive variable names. 
 features <- read.table("features.txt")
