@@ -1,6 +1,7 @@
-## GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
 
-## describes the variables, the data, and any transformations or work that you performed to clean up the data
+## Codebook
+
+## Functions and Transformations used to clean up the data
 
 1. Download the data locally and unzip
 2. Load relevant libraries: dplyr, tidyr, data.table
@@ -15,7 +16,8 @@
 11. Group and average the subsetted data of each Subject's Activity's measurements using group_by() and then summarise_all()
 12. Produce a text file of the summarised data from 11 using fwrite()
 
-Variables defined:
+## Variables Defined
+
 features: The column names of measured feature
 activitylabels: The activity performed
 x_test: The metrics recorded
