@@ -29,8 +29,8 @@ y_train: The activities that each Subject performed
 subject_train: The subjects that performed each activity
 train: the combination of the Training data
 data: the combination of the Test and Train data sets
-meanstd: The subset of the Means and Standard Deviations of the Test and            Train data sets
+meanstd: The subset of the Means and Standard Deviations of the Test and Train data sets
 grouped: Grouping of each Subject's Activity's Feature measurement
-Average: Averaging the groups of measurements for each Subject's Activity's          Feature
+Average: Averaging the groups of measurements for each Subject's Activity's Feature
 
 
