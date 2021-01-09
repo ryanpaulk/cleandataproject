@@ -61,3 +61,4 @@ names(meanstd) <- gsub("BodyBody", "Body", names(meanstd))
 grouped <- group_by(meanstd, Subject, Activity)
 Average <- summarise_all(grouped, mean, na.rm = TRUE)
 
+fwrite(Average, file = "TidyData.txt")
