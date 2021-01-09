@@ -1,6 +1,6 @@
-# cleandataproject
-Getting and Cleaning Data Course Project
-# This repo explains how all of the scripts work and how they are connected.
+
+#Getting and Cleaning Data Course Project
+
 This project merged the training and test data sets to create one data set. Only measurements of the mean and standard deviation were extracted for each feature. All activities and features were descriptively labeled.
 Merges the training and the test sets to create one data set.
 Extracts only the measurements on the mean and standard deviation for each measurement. A new tidy data set was produced containing the average of each subject's activity's measurements.
